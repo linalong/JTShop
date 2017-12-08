@@ -1,0 +1,1 @@
+maintabactivity 必须能转屏 vr页面才可以分屏

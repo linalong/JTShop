@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/include_title" />
+
+
+    <com.markmao.pulltorefresh.widget.XScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_title"
+        android:layout_marginBottom="50dp"
+        android:fillViewport="true" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_main1"
+        android:text="添加新地址"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/include_title" />
+
+    <com.markmao.pulltorefresh.widget.XListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_title"
+        android:layout_marginBottom="50dp"
+        android:background="@null"
+        android:divider="@color/gray2"
+        android:dividerHeight="1px"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/ll_notice"
+        layout="@layout/include_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_title"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_main1"
+        android:text="添加银行卡"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

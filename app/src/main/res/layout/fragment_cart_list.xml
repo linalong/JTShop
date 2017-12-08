@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/include_title" />
+
+    <com.markmao.pulltorefresh.widget.XListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_title"
+        android:layout_marginBottom="50dp"
+        android:background="@null"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/ll_notice"
+        layout="@layout/include_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_title"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="合计:"
+                    android:textColor="@color/black2"
+                    android:textSize="@dimen/textsize_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/orange2"
+                    android:textSize="@dimen/textsize_2" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="368"
+                    android:textColor="@color/orange2"
+                    android:textSize="@dimen/textsize_4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="优惠金额见结算页面"
+                android:textColor="@color/orange2"
+                android:textSize="@dimen/textsize_3" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_main1"
+            android:text="结算"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_5" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/ll_bottom"
+        android:background="@color/gray2" />
+
+
+</RelativeLayout>

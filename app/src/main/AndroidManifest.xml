@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.heizi.jtshop">
+
+    <application
+        android:name="com.heizi.jtshop.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+        <activity
+            android:name="com.heizi.jtshop.activity.MainTabsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/MainTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--启动页-->
+        <activity
+            android:name="com.heizi.jtshop.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+
+            </intent-filter>
+        </activity>
+        <!--支付密码-->
+        <activity
+            android:name="com.heizi.jtshop.block.login.ActPayPwd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--注册扫码-->
+        <activity
+            android:name="com.heizi.jtshop.block.login.ActivityScanCodeRegist"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--我的订单-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityOrder"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--退货-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityRefundApply"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--积分记录-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityPointRecord"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--订单详情-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityOrderDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--充值-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityRecharge"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--提现-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityWithdraw"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--银行卡-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityBankEdit"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--全景城市切换-->
+        <activity
+            android:name="com.heizi.jtshop.block.pano.ActivityCity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <!--全景列表-->
+        <activity
+            android:name="com.heizi.jtshop.block.pano.ActivityPanoList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--全景搜索-->
+        <activity
+            android:name="com.heizi.jtshop.block.pano.ActivitySearch"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <!--首页搜索结果-->
+        <activity
+            android:name="com.heizi.jtshop.block.pano.ActivityPanoSearchResult"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--收获地址列表-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityAddressList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--收获地址详情-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityAddressEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--订单确认-->
+        <activity
+            android:name="com.heizi.jtshop.block.maidan.ActivityOrderConfirm"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <!--商品详情-->
+        <activity
+            android:name="com.heizi.jtshop.block.maidan.ActivityProductDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--退款列表-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityRefundList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--退款详情-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityRefundDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--收获地址列表-->
+        <activity
+            android:name="com.heizi.jtshop.block.home.ActivityStore"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--我的优惠券-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityMyCoupon"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--我的银行卡列表-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityBankList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--城市搜索-->
+        <activity
+            android:name="com.heizi.jtshop.block.home.ActivitySearchCity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--评价列表-->
+        <activity
+            android:name="com.heizi.jtshop.block.maidan.ActivityCommitList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <!--我的积分-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityMyPoint"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <!--积分转赠-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityGivePoint"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--店铺列表-->
+        <activity
+            android:name="com.heizi.jtshop.block.home.ActivityProductList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--店铺详情-->
+        <activity
+            android:name="com.heizi.jtshop.block.home.ActivityStoreDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--搜索页面-->
+        <activity
+            android:name="com.heizi.jtshop.block.home.ActivitySearch"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--全景详情-->
+        <activity
+            android:name=".block.pano.ActivityPanoDetail"
+            android:configChanges="orientation|screenSize"></activity>
+        <!--地理位置页面 -->
+        <activity
+            android:name="com.heizi.jtshop.block.home.ActivityCity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--扫码页面 -->
+        <activity
+            android:name="com.heizi.jtshop.block.maidan.ActivityScanCode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--买单页面 -->
+        <activity
+            android:name="com.heizi.jtshop.block.maidan.ActivityMaidan"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--评论页面 -->
+        <activity
+            android:name="com.heizi.jtshop.block.maidan.ActivityCommit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--我收藏的vr-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityMyVRCollect"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <!--我收藏产品-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityMyProductCollect"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <!--个人信息-->
+        <activity
+            android:name="com.heizi.jtshop.block.my.ActivityUserInfo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name="com.heizi.jtshop.block.login.ActChangePwd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name="com.heizi.jtshop.block.login.ActLogin"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name="com.heizi.jtshop.block.login.ActLoginHome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name="com.heizi.jtshop.block.login.ActRegister"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name="com.heizi.jtshop.block.login.ActRetrievePwd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity
+            android:name="com.heizi.jtshop.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"></action>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ChLwacnwuwoSOHsMcUjsDAnxjhe4FwnO" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="8e8d22dc05089b4c3ef07449ed3a8fb1" />
+
+        <service android:name="com.amap.api.location.APSService"></service>
+
+
+        <!--友盟  ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'-->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="561cae6ae0f55abd990035bf"></meta-data>
+
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!--会话页面-->
+        <activity
+            android:name=".block.maidan.ActivityConversation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.heizi.jtshop"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 容云配置 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.heizi.jtshop"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+
+    </application><!-- 连接网络 -->
+    <uses-permission android:name="android.permission.INTERNET" /><!-- 允许读写存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!-- 允许程序访问Wi-Fi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><!-- =允许程序改变Wi-Fi连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" /><!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" /><!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" /><!-- 智齿客服 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"></uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- bug系统 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /><!--陀螺仪-->
+    <uses-permission android:name="android.permission.SENSOR_INFO" />
+    <uses-permission android:name="android.permission.SENSOR_ENABLE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+</manifest>

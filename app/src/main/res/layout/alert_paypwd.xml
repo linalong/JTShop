@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="输入支付密码立即购买?"
+        android:textSize="@dimen/textsize_4" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:hint="请输入支付密码"
+        android:textSize="@dimen/textsize_4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_common_bg"
+            android:text="确认"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_4" />
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_gray"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_4" />
+    </LinearLayout>
+
+
+</LinearLayout>
